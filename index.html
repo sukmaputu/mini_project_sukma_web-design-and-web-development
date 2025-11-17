@@ -1,15 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/mini_project_sukma_web-design-and-web-development/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>my-project</title>
-    <script type="module" crossorigin src="/mini_project_sukma_web-design-and-web-development/assets/index-COF_EDAs.js"></script>
-    <link rel="stylesheet" crossorigin href="/mini_project_sukma_web-design-and-web-development/assets/index-tn0RQdqM.css">
+
+    <!-- Tailwind Config for CDN -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Pastikan ini ada!
+        theme: {
+          extend: {
+            colors: {
+              neonGreen: '#00FF6A',
+              neonRed: '#FF1744',
+            }
+          }
+        }
+      }
+    </script>
+
+    <title>Anargya ITS</title>
+
+    <style>
+      /* GLOBAL STYLES - Ini akan berlaku di seluruh dokumen */
+      :root.theme-transition,
+      :root.theme-transition * {
+        transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease;
+      }
+</style>
+    <script type="module" crossorigin src="/mini_project_sukma_web-design-and-web-development/assets/index-B5E3vKsS.js"></script>
+    <link rel="stylesheet" crossorigin href="/mini_project_sukma_web-design-and-web-development/assets/index-By_8zw5r.css">
   </head>
-  <body>
+
+  <!-- PENTING: Class 'dark' akan di-toggle di sini oleh JS Vue Anda -->
+  <body class="">
     <div id="app"></div>
   </body>
 </html>
