@@ -8,6 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
+    <!-- 1. TAMBAH AOS CSS LINK (Wajib diletakkan di <head>) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Tailwind Config for CDN -->
     <script>
       tailwind.config = {
@@ -32,12 +35,22 @@
         transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease;
       }
 </style>
-    <script type="module" crossorigin src="/mini_project_sukma_web-design-and-web-development/assets/index-Dic3Djrm.js"></script>
-    <link rel="stylesheet" crossorigin href="/mini_project_sukma_web-design-and-web-development/assets/index-CrRPlL4N.css">
+    <script type="module" crossorigin src="/mini_project_sukma_web-design-and-web-development/assets/index-DqZSY47l.js"></script>
+    <link rel="stylesheet" crossorigin href="/mini_project_sukma_web-design-and-web-development/assets/index-DxXdlxky.css">
   </head>
 
   <!-- PENTING: Class 'dark' akan di-toggle di sini oleh JS Vue Anda -->
   <body class="">
     <div id="app"></div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800, // Durasi animasi dalam milidetik
+        once: true // Animasi hanya berjalan satu kali saat discroll
+      });
+    </script>
+
   </body>
 </html>
